@@ -26,19 +26,13 @@ import java.io.OutputStream;
 import java.util.Collections;
 import java.util.Map;
 
-public interface OrderRequestStreamHandler extends RequestStreamHandler {
+public interface NextPermRequestStreamHandler extends RequestStreamHandler {
     int SC_OK = 200;
-    int SC_CREATED = 201;
     int SC_BAD_REQUEST = 400;
-    int SC_NOT_FOUND = 404;
-    int SC_CONFLICT = 409;
-    int SC_INTERNAL_SERVER_ERROR = 500;
     Map<String, String> APPLICATION_JSON = Collections.singletonMap("Content-Type",
             "application/json");
-    ErrorMessage REQUEST_WAS_NULL_ERROR
-            = new ErrorMessage("Request was null", SC_BAD_REQUEST);
-    ErrorMessage ORDER_ID_WAS_NOT_SET
-            = new ErrorMessage("order_id was not set", SC_NOT_FOUND);
+    ErrorMessage REQUEST_WAS_INVALID_ERROR
+            = new ErrorMessage("Request was invalid", SC_BAD_REQUEST);
 
     /**
      * This method writes a body has invalid JSON response.
@@ -51,7 +45,7 @@ public interface OrderRequestStreamHandler extends RequestStreamHandler {
                                                   OutputStream output,
                                                   String details) throws IOException {
         objectMapper.writeValue(output, new GatewayResponse<>(
-                objectMapper.writeValueAsString(new ErrorMessage("Invalid JSON in body: "
+                objectMapper.writeValueAsString(new ErrorMessage("Invalid input in request: "
                         + details, SC_BAD_REQUEST)),
                 APPLICATION_JSON, SC_BAD_REQUEST));
     }

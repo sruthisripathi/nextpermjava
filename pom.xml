@@ -1,51 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.amazonaws</groupId>
-    <artifactId>aws-sam-java-rest</artifactId>
+    <groupId>com.nostosassgn</groupId>
+    <artifactId>nostos-assgn-next-perm</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>A sample REST application built on SAM and DynamoDB</name>
+    <name>Assignment for nostos</name>
 
     <scm>
-        <url>git@github.com:awslabs/aws-sam-java-rest.git</url>
+        <url>https://github.com/sruthisripathi/nextpermjava.git</url>
         <tag>1.0.0</tag>
     </scm>
 
     <developers>
         <developer>
-            <name>Alexander Patrikalakis</name>
-            <email>amcpatrikalakis@gmail.com</email>
-            <url>https://www.linkedin.com/in/amcpatrix/</url>
-        </developer>
-        <developer>
-            <name>Anubha Mandal</name>
-            <email>anubhamandal@gmail.com</email>
-            <url>https://www.linkedin.com/in/anubhamandal/</url>
-        </developer>
-        <developer>
-            <name>Shashank Saxena</name>
-            <email>saxena.shashank96@gmail.com</email>
-            <url>https://www.linkedin.com/in/shank96/</url>
-        </developer>
-        <developer>
-            <name>Jacob Fuss</name>
-            <email>jfuss@amazon.com</email>
-            <url>https://www.linkedin.com/in/jacob-fuss-11878731/</url>
-        </developer>
-        <developer>
-            <name>Mario Freitas</name>
-            <email>supmario@amazon.co.jp</email>
-            <url>https://www.linkedin.com/in/mariofreitas/</url>
+            <name>Sruthi Sripathi</name>
         </developer>
     </developers>
-    <inceptionYear>2018</inceptionYear>
-    <licenses>
-        <license>
-            <name>MIT No Attribution</name>
-            <url>https://spdx.org/licenses/MIT-0.html</url>
-        </license>
-    </licenses>
+    <inceptionYear>2021</inceptionYear>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
