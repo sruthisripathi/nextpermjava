@@ -1,4 +1,4 @@
-# Part of this code and folder structure is taken from aws-sam-java-rest repository
+# Part of this code and folder structure is taken from [aws-sam-java-rest](https://github.com/aws-samples/aws-sam-java-rest) repository
 
 This is a sample application to demonstrate how to build an application on DynamoDB using the
 DynamoDBMapper ORM framework to map Order items in a DynamoDB table to a RESTful API for order
